@@ -1,0 +1,194 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+  }
+  
+  header {
+      background: #333;
+      color: #fff;
+      padding: 10px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Memisahkan logo dan tombol */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    padding: 0 20px;
+}
+
+.date-time {
+    flex-grow: 1; /* Memungkinkan elemen ini untuk tumbuh dan mengambil ruang yang tersedia */
+    text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+.nav-buttons {
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+}
+
+.toggle-button {
+    display: none; /* Sembunyikan tombol toggle di layar besar */
+}
+  .welcome {
+      text-align: center;
+      padding: 20px;
+  }
+
+  .marquee {
+      font-size: 24px;
+      color: #333;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+      text-align: center;
+      margin: 20px 0;
+  }
+  
+  .marquee span {
+      display: inline-block;
+      animation: typing 5s steps(30, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+  }
+  
+  .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 200px;
+      transition: transform 0.3s;
+  }
+  
+  .card:hover {
+      transform: scale(1.05);
+  }
+  
+  .about {
+      text-align: center;
+      padding: 20px;
+  }
+  
+  
+  .price-list {
+      padding: 20px;
+  }
+  
+  .prices {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+  }
+  
+  .price {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 200px; /* Atur lebar card sesuai kebutuhan */
+      text-align: center;
+  }
+  
+  .price-image {
+      width: 100%; /* Membuat gambar menyesuaikan lebar card */
+      height: auto; /* Menjaga rasio aspek gambar */
+      object-fit: cover; /* Memastikan gambar mengisi area tanpa distorsi */
+      border-radius: 5px; /* Menambahkan sudut melengkung pada gambar */
+  }
+  
+  .testimoni {
+      padding: 20px;
+      text-align: center;
+  }
+  
+  #name-input {
+      width: 20%;
+      padding: 10px;
+      margin: 10px 0;
+  }
+  
+  #testimoni-input {
+      width: 30%;
+      padding: 10px;
+      margin: 10px 0;
+  }
+  
+  button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+  }
+  
+  button:hover {
+      background-color: #555;
+  }
+  
+  footer {
+      text-align: center;
+      padding: 10px;
+      background: #333;
+      color: #fff;
+  }
+
+  @keyframes typing {
+      from {
+          width: 0;
+      }
+      to {
+          width: 100%;
+      }
+  }
+  
+  @keyframes blink-caret {
+      from, to {
+          border-color: transparent;
+      }
+      50% {
+          border-color: orange;
+      }
+  }
+  @media (max-width: 768px) {
+    .menu {
+        display: none; /* Sembunyikan menu di layar kecil */
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        background: #444;
+        border-radius: 5px;
+        padding: 10px;
+        animation: slideDown 0.5s ease;
+    }
+
+    .toggle-button {
+        display: block; /* Tampilkan tombol toggle di layar kecil */
+    }
+
+    .menu.show {
+        display: flex; /* Tampilkan menu saat toggle di klik */
+    }
+}
+  
+  @keyframes slideDown {
+      from {
+          opacity: 0;
+          transform: translateY(-10px);
+      }
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }

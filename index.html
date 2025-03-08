@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Shopping</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+      <header>
+            <nav class="navbar">
+                <div class="logo" style="font-weight: bold;">WII<span style="color: blue; margin-left: 5px;">Store</span></div>
+                <div class="date-time">
+                    <span id="date"></span>
+                    <span id="time"></span>
+                </div>
+                <div class="nav-buttons">
+                    <button class="toggle-button" onclick="toggleMenu()">☰</button>
+                    <div id="menu" class="menu">
+                        <button onclick="scrollToSection('about')">Tentang</button>
+                        <button onclick="scrollToSection('testimoni')">Testimoni</button>
+                        <button onclick="scrollToSection('price-list')">Price List</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+    <main>
+        <section class="welcome">
+            <h1>Selamat Datang di Toko Kami</h1>
+            <div class="marquee">
+                  <span id="marquee-text"></span>
+              </div>
+            <div class="cards">
+                <div class="card">
+                    <h2>Aplikasi Premium</h2>
+                    <p><b>Aplikasi Nonton</b> <br>
+                        Netflix, Vidio, Viu, Wetv, dan Prime Video. <br>
+                        <b>Aplikasi Edit</b> <br>
+                        Capcut, Alight Motion, dan Canva <br>
+                        <b>Aplikasi VPN</b> <br>
+                        ExpressVPN <br>
+                        <b>Aplikasi Musik</b><br>
+                        Spotify dan apple musik <br>
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>Top Up Game</h2>
+                    <p><b> GAME</b><br>
+                        Free Fire, Mobile Legends, Pubg, Arena Of Valor, Call Of Duty Mobile.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>Tentang Toko Kami</h2>
+            <div class="about-content">
+                <img src="wii.jpg" alt="About Image"  style="width: 300px;">
+                <h3>WII STORE</h3>
+                <p>Wii Store Didirikan Pada Tanggal 8 Maret 2023. <br>
+                  Wii Store Iyalah Tempat Menyediakan Jasa Aplikasi Berbayar Atau Premium/Pro yang legal. <br>
+                  Untuk Alamat Wii STORE Sendiri berada di Desa Bago, Kec. Besuk, Kab. Probolinggo, Jawa Timur, Indonesia.
+                </p>
+            </div>
+        </section>
+
+        <section id="price-list" class="price-list">
+            <h2 style="text-align: center;">Price List</h2>
+            <div class="prices">
+                <div class="price">
+                    <h3>Netflix UHD</h3>
+                    <img src="netflix.jpeg" alt="Item 1" class="price-image">
+                    <p>Harga: Rp. 19.000</p>
+                    <p>Note: <br>
+                       1. Akun Dari Seller. <br>
+                       2. Untuk Akunnya 1P1U 1 Bulan yang artinya 1 Profile untuk 1 Pengguna, 
+                        yang dimana jarang terkena limit screen. <br>
+                       3. s&k Akan dikirim bersama akunnya yang akan dikirim saat pembeli membeli paket ini. <br>
+                       4. <b>FULL GARANSI</b> <br>
+                       5. Tanyakan Stock Dulu !.    
+                  </p>
+                    <button onclick="window.open('https:wa.me/6281249766227', '_blank')">Hubungi WA</button>
+                </div>
+
+                <div class="price">
+                    <h3>Vidio Platinum</h3>
+                    <img src="vidio.jpeg" alt="Item 1" class="price-image">
+                    <p>Harga: Rp. 15.000</p>
+                    <p>Note: <br>
+                       1. Akun Dari Seller. <br>
+                       2. Untuk Akunnya Private 1 Bulan <br>
+                       3. s&k Akan dikirim bersama akunnya yang akan dikirim saat pembeli membeli paket ini. <br>
+                       4. <b>FULL GARANSI</b> sesuai dengan s&k.
+                          
+                  </p>
+                    <button onclick="window.open('https:wa.me/6281249766227', '_blank')">Hubungi WA</button>
+                </div>
+
+                <div class="price">
+                    <h3> Viu  Premium</h3>
+                    <img src="viu.jpg" alt="Item 1" class="price-image">
+                    <p>Harga: Rp. 2.000</p>
+                    <p>Note: <br>
+                       1. Akun Dari Seller. <br>
+                       2. Untuk Akunnya Private 2 Bulan <br>
+                       3. s&k Akan dikirim bersama akunnya yang akan dikirim saat pembeli membeli paket ini. <br>
+                       4. <b>FULL GARANSI</b> sesuai dengan s&k.
+                          
+                  </p>
+                    <button onclick="window.open('https:wa.me/6281249766227', '_blank')">Hubungi WA</button>
+                </div>
+
+                <div class="price">
+                    <h3> Youtube Inplan</h3>
+                    <img src="youtube.jpeg" alt="Item 1" class="price-image">
+                    <p>Harga: Rp. 1.500</p>
+                    <p>Note: <br>
+                       1. Hanya membutuhkan Email. <br>
+                       2. Untuk Akunnya Indplan 1 Bulan  artinya Individual Plan <br>
+                       3. s&k Akan dikirim bersama akunnya yang akan dikirim saat pembeli membeli paket ini. <br>
+                       4. <b>NO GARANSI</b> sesuai dengan s&k.                    
+                  </p>
+                    <button onclick="window.open('https:wa.me/6281249766227', '_blank')">Hubungi WA</button>
+                </div>
+
+                <div class="price">
+                    <h3> Youtube Indplan</h3>
+                    <img src="youtube.jpeg" alt="Item 1" class="price-image">
+                    <p>Harga: Rp. 7.000</p>
+                    <p>Note: <br>
+                       1. Akun Dari Seller. <br>
+                       2. Untuk Akunnya Indplan 3 Bulan  artinya Individual Plan <br>
+                       3. s&k Akan dikirim bersama akunnya yang akan dikirim saat pembeli membeli paket ini. <br>
+                       4. <b>NO GARANSI</b> sesuai dengan s&k.                    
+                  </p>
+                    <button onclick="window.open('https:wa.me/6281249766227', '_blank')">Hubungi WA</button>
+                </div>
+
+                <div class="price">
+                    <h3> Youtube Famhead</h3>
+                    <img src="youtube.jpeg" alt="Item 1" class="price-image">
+                    <p>Harga: Rp. 7.000</p>
+                    <p>Note: <br>
+                       1. Akun Dari Seller. <br>
+                       2. Untuk Akunnya Famhead 1 Bulan  artinya Bisa Invite 4 members untuk premium. <br>
+                       3. s&k Akan dikirim bersama akunnya yang akan dikirim saat pembeli membeli paket ini. <br>
+                       4. <b>NO GARANSI</b> sesuai dengan s&k.                    
+                  </p>
+                    <button onclick="window.open('https:wa.me/6281249766227', '_blank')">Hubungi WA</button>
+                </div>
+
+                <div class="price">
+                    <h3> Canva PRO</h3>
+                    <img src="canva.jpeg" alt="Item 1" class="price-image">
+                    <p>Harga: Rp. 500</p>
+                    <p>Note: <br>
+                       1. Invite 1 bulan . <br>
+                       2. Hanya membutuhkan Email Saja <br>
+                       3. s&k Akan dikirim bersama akunnya yang akan dikirim saat pembeli membeli paket ini. <br>
+                       4. <b>FULL GARANSI</b> sesuai dengan s&k.                    
+                  </p>
+                    <button onclick="window.open('https:wa.me/6281249766227', '_blank')">Hubungi WA</button>
+                </div>
+
+                <div class="price">
+                    <h3> Cannva Owner</h3>
+                    <img src="canva.jpeg" alt="Item 1" class="price-image">
+                    <p>Harga: Rp. 4.000</p>
+                    <p>Note: <br>
+                       1. Akun Dari Seller 1 Bulan. <br>
+                       2. Bisa Invite 500 Members <br>
+                       3. s&k Akan dikirim bersama akunnya yang akan dikirim saat pembeli membeli paket ini. <br>
+                       4. <b>NO GARANSI</b> sesuai dengan s&k.                    
+                  </p>
+                    <button onclick="window.open('https:wa.me/6281249766227', '_blank')">Hubungi WA</button>
+                </div>
+
+                <div class="price">
+                    <h3> Prime Video</h3>
+                    <img src="prime.png" alt="Item 1" class="price-image">
+                    <p>Harga: Rp. 5.000</p>
+                    <p>Note: <br>
+                       1. Akun Dari Seller. <br>
+                       2. Akun Private 1 Bulan. <br>
+                       3. s&k Akan dikirim bersama akunnya yang akan dikirim saat pembeli membeli paket ini. <br>
+                       4. <b>NO GARANSI</b> sesuai dengan s&k.                    
+                  </p>
+                    <button onclick="window.open('https:wa.me/6281249766227', '_blank')">Hubungi WA</button>
+                </div>
+
+                <div class="price">
+                    <h3> Prime Video</h3>
+                    <img src="prime.png" alt="Item 1" class="price-image">
+                    <p>Harga: Rp. 8.000</p>
+                    <p>Note: <br>
+                       1. Akun Dari Seller. <br>
+                       2. Akun Private 1 Bulan. <br>
+                       3. s&k Akan dikirim bersama akunnya yang akan dikirim saat pembeli membeli paket ini. <br>
+                       4. <b>FULL GARANSI</b> sesuai dengan s&k.                    
+                  </p>
+                    <button onclick="window.open('https:wa.me/6281249766227', '_blank')">Hubungi WA</button>
+                </div>
+
+                <div class="price">
+                    <h3> CapCut PRO</h3>
+                    <img src="capcut.jpeg" alt="Item 1" class="price-image">
+                    <p>Harga: Rp. 21.000</p>
+                    <p>Note: <br>
+                       1. Akun Dari Seller. <br>
+                       2. Akun Private 1 Bulan. <br>
+                       3. s&k Akan dikirim bersama akunnya yang akan dikirim saat pembeli membeli paket ini. <br>
+                       4. <b>FULL GARANSI</b> sesuai dengan s&k.                    
+                  </p>
+                    <button onclick="window.open('https:wa.me/6281249766227', '_blank')">Hubungi WA</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="testimoni" class="testimoni">
+            <h2>Testimoni</h2>
+            <div id="testimoni-list"></div>
+            <input type="text" id="name-input" placeholder="Nama Anda" /><br>
+            <textarea id="testimoni-input" placeholder="Tulis ulasan Anda..."></textarea><br>
+            <button onclick="submitTestimoni()">Kirim</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 create by WII STORE.</p>
+    </footer>
+</body>
+</html>
